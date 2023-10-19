@@ -1,0 +1,51 @@
+package com.neymar.demorest;
+
+import java.util.*;
+import java.sql.*;
+
+public class AlienRepositary {
+
+	
+	Connection conn = null;
+	
+	public AlienRepositary() {
+		
+		try {
+			String url = "jdbc:mysql://localhost:3306/reki";
+			String user = "root";
+			String pass = "rekildo3012";
+			conn = DriverManager.getConnection(url,user,pass);
+			
+			Statement st = conn.createStatement();
+			String query = "";
+			st.execute(query);
+			
+			conn.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+	}
+	
+	public List<Alien> getAliens(){
+		return aliens;
+	}
+	
+	public Alien getAlien(int id) {
+	
+
+		for(Alien a : aliens) {
+			if(a.getId() == id)
+				return a;
+		}
+		
+		return null;
+	}
+
+	public void create(Alien a1) {
+		// TODO Auto-generated method stub
+		aliens.add(a1);
+	}
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.musi.demo.dao;
+
+public interface AlienRepo {
+
+}

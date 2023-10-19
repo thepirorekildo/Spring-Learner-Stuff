@@ -1,0 +1,5 @@
+package com.good.model;
+
+public class Alien {
+
+}

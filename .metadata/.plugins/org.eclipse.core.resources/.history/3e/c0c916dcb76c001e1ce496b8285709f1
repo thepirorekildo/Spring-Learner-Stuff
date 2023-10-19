@@ -1,0 +1,5 @@
+package com.musi.model;
+
+public class Alien {
+
+}

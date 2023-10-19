@@ -1,0 +1,25 @@
+package com.neymar.demorest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AlienRepositary {
+
+	List<Alien> aliens;
+	
+	public AlienRepositary() {
+		alines = new ArrayList<>();
+		
+		
+		Alien a1 = new Alien();
+		a1.setName("ANkit Bharniya");
+		a1.setPoints(69);
+		
+		Alien a2 = new Alien();
+		a2.setName("Musu");
+		a2.setPoints(23);
+		
+		aliens.add(a1);
+		aliens.add(a2);
+	}
+}

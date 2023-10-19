@@ -1,0 +1,8 @@
+package com.neymar.demorest;
+
+import jakarta.ws.rs.Path;
+
+@Path("alien")
+public class AlienResource {
+
+}

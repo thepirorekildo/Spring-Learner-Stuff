@@ -1,0 +1,13 @@
+package com.rekildo;
+
+import java.util.*;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AlineResource {
+	
+	public List<Alien> getAliens(){
+		List<Alien> aliens = new ArrayList()<>();
+	}
+}

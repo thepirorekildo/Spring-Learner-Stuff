@@ -1,0 +1,50 @@
+package com.neymar.demorest;
+
+import java.util.*;
+
+public class AlienRepositary {
+
+	List<Alien> aliens;
+	
+	public AlienRepositary() {
+		
+		aliens = new ArrayList<>();
+		
+		Alien a1 = new Alien();
+		a1.setId(101);
+		a1.setName("ANkit Bharniya");
+		a1.setPoints(69);
+		
+		Alien a2 = new Alien();
+		a2.setId(102);
+		a2.setName("Musu");
+		a2.setPoints(23);
+		
+		aliens.add(a1);
+		aliens.add(a2);
+	}
+	
+	public List<Alien> getAliens(){
+		return aliens;
+	}
+	
+	public Alien getAlien(int id) {
+	
+
+		for(Alien a : aliens) {
+			if(a.getId() == id)
+				return a;
+		}
+		
+		return null;
+	}
+	
+	//putting the data into database
+	@POST
+	public Alien createAlien(Alien a1) {
+		
+		
+		
+		return a1;
+	}
+}

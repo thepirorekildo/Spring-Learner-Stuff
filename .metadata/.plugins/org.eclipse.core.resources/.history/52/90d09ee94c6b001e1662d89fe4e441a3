@@ -1,0 +1,5 @@
+package com.neymar.demorest;
+
+public class AlienResource {
+
+}

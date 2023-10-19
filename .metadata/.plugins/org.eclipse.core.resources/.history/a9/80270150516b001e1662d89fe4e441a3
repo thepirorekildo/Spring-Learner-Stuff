@@ -1,0 +1,6 @@
+package com.neymar.demorest;
+
+public class AlienRepositary {
+
+	List<Alien> aliens;
+}
